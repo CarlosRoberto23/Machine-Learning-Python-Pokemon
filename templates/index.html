@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>POKEMONS</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+<link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link rel= "stylesheet" type= "text/css" href= "../static/css/style.css">
+  
+</head>
+
+<div>
+<body>
+
+ <div class="login">
+
+	<h1>POKEMONS</h1>
+    <form action="/predict" method="post" >
+    <input type="text" name="total" placeholder="Por favor, informe o total do pokemon:" required="required" />
+    <input type="text" name="hp" placeholder="Por favor, informe o HP do pokemon:" required="required" />
+		<input type="text" name="pa" placeholder="Por favor, informe o potencial de ataque:" required="required" />
+		<input type="text" name="def" placeholder="Por favor, informe o potencial de defesa:" required="required" />
+    <input type="text" name="as" placeholder="Por favor, informe a Velocidade de Ataque:" required="required" />
+		<input type="text" name="ds" placeholder="Por favor, informe a Velocidade de Defesa:" required="required" />
+		<input type="text" name="vel" placeholder="Por favor, informe a velocidade do Pokemon:" required="required" />
+    <input type="text" name="ger" placeholder="Por favor, informe a geração do Pokemon:" required="required" />
+    <button type="submit" class="btn btn-primary btn-block btn-large">Verificar Pokemon</button>
+    </form>
+
+   <br>
+   <h2>{{ prediction_text }} </h2>
+   <h3>{{ prediction_res}} </h3>
+  
+  </div>
+
+  
+</body>
+</html>
+
